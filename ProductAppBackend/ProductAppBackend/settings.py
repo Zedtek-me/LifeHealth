@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'productApp',
     "graphene_django",
+    "corsheaders"
 ]
 
 MIDDLEWARE = [
