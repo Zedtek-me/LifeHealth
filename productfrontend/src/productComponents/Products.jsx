@@ -33,7 +33,7 @@ class Products extends React.Component{
             <>
                 <div className="productPage">
                     {
-                        this.state.products ? this.state.products.map(productCards) : "no products available!"
+                        this.state.products ? this.state.products.map(productCards) : <div className="no-product">no products available!</div>
                     }
                 </div>
             </>
