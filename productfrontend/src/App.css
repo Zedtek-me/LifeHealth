@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Poppins", "Montserratt";
+  src: url();
+}
+
+*{
+  font-family: "Poppins, Montserrat";
+  box-sizing: border-box;
+  width: 100%;
+}
 .App{
   display: flex;
   flex-direction: column;
@@ -15,20 +25,20 @@
   align-items: center;
   background-color: rgb(7, 7, 39);
   color: white;
-  width: 100%;
 }
 
 .productPage{
   /* parent div in the product component */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:0.5ps;
+  gap:0.5px;
   width: 50%;
+  text-align: center;
+  padding: 10px;
 }
 
 .card{
   /* representing each product from the api */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
