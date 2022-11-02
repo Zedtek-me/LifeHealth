@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -54,9 +55,14 @@ MIDDLEWARE = [
 
 # graphene conf
 GRAPHENE={
-    "SCHEMA": "productApp.schema"
+    "SCHEMA": os.path.join(BASE_DIR,"schema")
 }
 
+# access control headers for react and django server communication, conf
+CORS_ALLOWED_ORIGINS=[
+    "localhost:3000", 
+    "127.0.0.1:3000",
+]
 ROOT_URLCONF = 'ProductAppBackend.urls'
 
 TEMPLATES = [
