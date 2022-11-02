@@ -52,6 +52,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# graphene conf
+GRAPHENE={
+    "SCHEMA": "productApp.schema"
+}
+
 ROOT_URLCONF = 'ProductAppBackend.urls'
 
 TEMPLATES = [
