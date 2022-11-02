@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -61,8 +61,8 @@ GRAPHENE={
 
 # access control headers for react and django server communication, conf
 CORS_ALLOWED_ORIGINS=[
-    "localhost:3000", 
-    "127.0.0.1:3000",
+    "http://localhost:3000", 
+    "http://127.0.0.1:3000",
 ]
 ROOT_URLCONF = 'ProductAppBackend.urls'
 
@@ -135,7 +135,7 @@ STATICFILES_DIRS= [os.path.join(BASE_DIR, "productApp/static")]
 STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 
 # media conf
-MEDIA_URL= "media"
+MEDIA_URL= "media/"
 MEDIA_ROOT= os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
