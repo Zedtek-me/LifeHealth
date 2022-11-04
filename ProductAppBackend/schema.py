@@ -1,8 +1,8 @@
 from graphene import ObjectType, Schema
-from productApp.schema import Query
+import productApp
 
-class Query(Query, ObjectType):
+class Query(productApp.schema.Query, ObjectType):
     pass
 
 
-shema= Schema(query= Query)
+schema= Schema(query= Query)

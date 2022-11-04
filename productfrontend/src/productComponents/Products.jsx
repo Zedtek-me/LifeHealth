@@ -12,6 +12,8 @@ class Products extends React.Component{
 
     handleAddToCart(e){
         const product= e.target
+        const cart= document.querySelector("#summary")
+        console.log(cart)
     }
     componentDidMount(){
         // fetch my graphql endpoint here, and update the state accordingly

@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'productApp',
-    "graphene_django",
-    "corsheaders"
+    'graphene_django',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 # graphene conf
 GRAPHENE={
-    "SCHEMA": os.path.join(BASE_DIR,"schema")
+    "SCHEMA": os.path.join(BASE_DIR,"schema/schema")
 }
 
 # access control headers for react and django server communication, conf
